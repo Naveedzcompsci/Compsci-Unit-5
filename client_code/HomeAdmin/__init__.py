@@ -30,6 +30,10 @@ class HomeAdmin(HomeAdminTemplate):
     """This method is called when the button is clicked"""
     open_form('InvoicesAdmin')
 
+  def signout_link_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Logout')
+
 
 
 

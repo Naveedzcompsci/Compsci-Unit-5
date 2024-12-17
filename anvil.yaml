@@ -1,6 +1,55 @@
 allow_embedding: false
 correct_dependency_ids: {}
 db_schema:
+  bookings:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: ID
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: Name
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: Number
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: pickupAddress
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      name: dropoffAddress
+      type: string
+    - admin_ui: {order: 5, width: 200}
+      name: pickupTime
+      type: datetime
+    - admin_ui: {order: 6, width: 200}
+      name: dropoffTime
+      type: string
+    - admin_ui: {order: 7, width: 200}
+      name: driverID
+      type: string
+    - admin_ui: {order: 8, width: 200}
+      name: status
+      type: string
+    server: full
+    title: Bookings
+  documents:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: DocumentID
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: DriverID
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: DocumentType
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: ExpiryDate
+      type: datetime
+    server: full
+    title: Documents
   files:
     client: none
     columns:
@@ -16,6 +65,66 @@ db_schema:
       type: datetime
     server: full
     title: Files
+  invoices:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: InvoiceID
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: DriverID
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: Passenger
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: Amount
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      name: status
+      type: string
+    server: full
+    title: Invoices
+  notifications:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: NotificationID
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: DriverID
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: Message
+      type: string
+    server: full
+    title: Notifications
+  user:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: userId
+      type: string
+    - admin_ui: {order: 1, width: 200}
+      name: FirstName
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: LastName
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: Email
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      name: Password
+      type: string
+    - admin_ui: {order: 5, width: 200}
+      name: phoneNumber
+      type: string
+    - admin_ui: {order: 6, width: 200}
+      name: role
+      type: string
+    server: full
+    title: user
   users:
     client: none
     columns:

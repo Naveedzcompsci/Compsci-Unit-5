@@ -1,0 +1,31 @@
+components:
+- layout_properties: {column: JKSDUP}
+  name: label_1
+  properties: {text: 1/9/2024}
+  type: Label
+- layout_properties: {column: VJQQOR}
+  name: label_2
+  properties: {text: NP20 4AX}
+  type: Label
+- layout_properties: {column: OJLQEN}
+  name: label_3
+  properties: {text: CF10 1EP}
+  type: Label
+- layout_properties: {column: VMJDLA}
+  name: label_4
+  properties: {text: John}
+  type: Label
+- layout_properties: {column: CRYXOC}
+  name: label_5
+  properties: {text: (4)}
+  type: Label
+- layout_properties: {column: SNTNXL}
+  name: label_6
+  properties: {text: complete}
+  type: Label
+- layout_properties: {column: ZMCPJA}
+  name: label_7
+  properties: {text: card}
+  type: Label
+container: {type: DataRowPanel}
+is_package: true

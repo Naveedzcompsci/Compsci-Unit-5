@@ -24,21 +24,28 @@ components:
       properties:
         bold: true
         italic: false
-        text: |+
-          Bookings                                                                                                                                                                                                                                                                           Set Date Filter ( 01/09/2024 - 15/09/2024)
-
+        text: "Bookings                                                                                                                                                                                                                                                                                                                                                                                                        Set Date Filter \n"
         underline: false
       type: Label
+    - event_bindings: {change: date_picker_1_change}
+      layout_properties: {grid_position: 'ZWUVAY,KKTOZW'}
+      name: date_picker_1
+      properties: {}
+      type: DatePicker
+    - layout_properties: {grid_position: 'ZWUVAY,VOSAKI'}
+      name: card_3
+      properties: {role: card}
+      type: ColumnPanel
     - layout_properties: {grid_position: ''}
       name: label_7_copy
       properties:
         bold: true
         text: |+
-          Date/Time      From                To                     Passenger        Driver      Status           Payment                                                                                                              1/9/2024        NP20 4AX   CF10 1EP     John                       (4)              Complete     Card                                                                                                              7/9/2024        NP20 4AX   CF10 1EP     John                       (4)              Complete     Card                                                                                                                   8/9/2024        NP20 4AX   CF10 1EP     John                       (4)              Complete     Card                                                                                                          9/9/2024        NP20 4AX   CF10 1EP     John                       (4)              Complete     Card                                                                                                                                                                         Back         1 2 3 4 5     Next
+          Date/Time      From                To                     Passenger        Driver      Status           Payment                                                                                                                                                                                                         1/9/2024        NP20 4AX   CF10 1EP     John                       (4)              Complete     Card                                                                                                                                                           7/9/2024        NP20 4AX   CF10 1EP     John                       (4)              Complete     Card                                                                                                                                                                          8/9/2024        NP20 4AX   CF10 1EP     John                       (4)              Complete     Card                                                                                                                                                            9/9/2024        NP20 4AX   CF10 1EP     John                       (4)              Complete     Card                                                                                                                                                                                                                                                                                                                            Back         1 2 3 4 5     Next
 
 
       type: Label
-    layout_properties: {grid_position: 'KXAYUX,KZHECL'}
+    layout_properties: {grid_position: 'WVPBLV,KPLKWZ'}
     name: card_2
     properties: {role: card}
     type: ColumnPanel
