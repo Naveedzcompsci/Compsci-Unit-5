@@ -46,9 +46,10 @@ db_schema:
     server: full
     title: Users
 dependencies: []
-name: Dashboard Template A
+metadata: {title: ''}
+name: Prototype
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
-package_name: Dashboard_Template_A
+package_name: Prototype
 runtime_options: {client_version: '3', preview_v3: true, server_spec: null, server_version: python3-sandbox, version: 2}
 services:
 - client_config: {}
@@ -57,5 +58,5 @@ services:
 - client_config: {allow_signup: true, confirm_email: false, enable_automatically: true, use_email: true, use_google: false}
   server_config: {user_table: users}
   source: /runtime/services/anvil/users.yml
-startup: {module: Frame, type: form}
+startup: {module: LoginPage, type: form}
 startup_form: null
