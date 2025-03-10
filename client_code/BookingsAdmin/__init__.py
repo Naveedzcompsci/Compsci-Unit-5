@@ -8,29 +8,25 @@ from anvil.tables import app_tables
 
 
 class BookingsAdmin(BookingsAdminTemplate):
-  def __init__(self, **properties):
-    # Set Form properties and Data Bindings.
-    self.init_components(**properties)
+    def __init__(self, **properties):
+        # Set Form properties and Data Bindings.
+        self.init_components(**properties)
 
-    # Any code you write here will run before the form opens.
+    def home_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        open_form('HomeAdmin')
 
-  def home_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('HomeAdmin')
+    def bookings_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        open_form('BookingsAdmin')
 
-  def bookings_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('BookingsAdmin')
+    def reports_page_link_click(self, **event_args):  # Added missing method for "reports_page_link_click"
+        """This method is called when the button is clicked"""
+        open_form('StaffAdmin')
 
-  def reports_page_link_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('StaffAdmin')
+    def button_4_click(self, **event_args):  # Added missing method for "button_4_click"
+        """This method is called when the button is clicked"""
+        open_form('InvoicesAdmin')
 
-  def button_4_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('InvoicesAdmin')
-
-  def Newbtn_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('CreateBookingsAdmin')
-
+    def Newbtn_click(self, **event_args):  # Added missing method for "Newbtn_click"
+        """Thi
